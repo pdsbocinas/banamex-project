@@ -1,0 +1,1189 @@
+/* STYLES  MINI-IPAD*/
+/* OBRA MESTRA DE PERFECT PIXEL Y MAQUETEITOR */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Arial';
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	overflow: hidden;
+}
+body {
+	line-height: 1;
+	color: #fff;
+	font-family: 'Palanquin-Regular';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img{
+    display: block;
+}
+a{
+    outline: none!important;
+}
+a:active, a:focus{
+    outline: none!important;
+}
+@font-face {
+    font-family: 'Palanquin-Regular';
+    src: url('../fonts/Palanquin-Regular.ttf');
+}
+@font-face {
+    font-family: 'Palanquin-Thin';
+    src: url('../fonts/Palanquin-Thin.ttf');
+}
+@font-face {
+    font-family: 'Palanquin-Bold';
+    src: url('../fonts/Palanquin-Bold.ttf');
+}
+.text-indent{
+	text-indent: -1000em;
+}
+
+header{
+	background: url('../images/bg-header.jpg') repeat-x;
+	height: 80px;
+	display: block;
+	width: 100%;	
+}
+
+header .btn-back {
+	float: right;
+    margin-top: -46px;
+    display: none;
+}
+.home-perfilar .img-responsive{
+	margin-top: 18px;
+}
+.content{
+	max-width: 1850px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+a.logo{
+	margin-top: 15px;
+	display: block;
+	float: left;
+	width: 206px;
+	height: 45px;
+}
+.content-home{
+	background: url('../images/bg-home.png') no-repeat;
+	width: 100%;
+	height: 1000px;
+	display: block;
+}
+.content-resultado,
+.content-perfilar{
+	background: url('../images/PefiladorFinanciero-Background.png') no-repeat;
+	width: 100%;
+	height: 1000px;
+	display: block;
+}
+.inner-content {
+    margin: 0 auto;
+    padding-top: 380px;
+    max-width: 310px;
+}
+ul.box-cards{
+	left: 9%;
+	position: relative;
+	margin-top: 120px;
+}
+h1{
+	font-family: 'Palanquin-Bold';
+	font-size: 60px;
+	display: block;
+	margin-bottom: 80px;
+}
+.content-home p{
+	margin-bottom: 80px;
+	display: block;
+	text-align: center;
+}
+.btn-home{
+	color: #fff;
+	font-family: 'Palanquin-Bold';
+	text-transform: uppercase;
+	padding: 15px 30px;
+	text-align: center;
+	font-size: 30px;
+	border: 2px solid #fff;
+	width: 78%;
+	display: block;
+	margin: 0 auto 15px;
+}
+.btn-home:hover{
+	color: #fff;
+}
+.misc{
+	background: url('../images/touch.png') no-repeat;
+	width: 26px;
+	height: 16px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* PERFILAR */
+
+.font-48{
+	font-size: 48px;
+} 
+.font-42{
+	font-size: 42px;
+}
+.content-perfilar .inner-content{
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 130px;
+}
+.content-perfilar li{
+	width: 26.33%;
+	margin-right: 20px;
+	float: left;
+}
+.content-perfilar li .option{
+	position: relative;
+	margin-bottom: 20px;
+}
+.content-perfilar li .option div.box-option{
+	display: block;
+	position: absolute;
+	z-index: 10;
+	text-align: center;
+	top: 23%;
+	left: 0;
+	width: 100%;
+}
+.content-perfilar li .option.vivienda div.box-option{
+	width: 76%;
+}
+.content-perfilar li .ocupacion.back div.box-option{
+	top: 13%;
+}
+.col-1 > div {
+    height: 385px;
+}
+.col-2 .resultado.credito, 
+.col-2 > .box-credito{
+	height: 188px;
+}
+.resultado.ingresos.resultadoIngresos,
+.col-2 .resultado.ocupacion, 
+.col-2 > .box-ocupacion{
+	height: 397px;
+}
+
+.col-2 > .box-hijos{
+	height: 188px;
+} 
+.col-3 > .box-ingresos{
+	height: 397px;
+}
+.col-3 > .box-automovil{
+	height: 188px;
+}
+.vivienda.option.front,
+.vivienda.option.back{
+	position: relative;
+}  
+.cardVivienda{
+    float: right;
+    width: 61%!important;
+    left: 76px;
+}
+.content-perfilar li.col-3{
+	padding-top: 188px;
+	position: relative;
+}
+.box-option h2{
+	text-align: center;
+	font-family: 'Palanquin-Bold';
+	margin-bottom: 5px;
+}
+.box-option h3{
+	text-align: center;
+	font-family: 'Palanquin-Thin';
+	font-size: 23px;
+	margin-bottom: 30px;
+}
+.box-option p{
+	text-align: center;
+	font-size: 17px;
+	font-family: 'Palanquin-Regular';
+}
+.box-option a{
+	font-family: 'Palanquin-Bold';
+	color: #fff;
+	font-size: 26px;
+}
+.credito .box-option a,
+.hijos .box-option a,
+.automovil  .box-option a{
+	width: 120px;
+	height: 40px;
+}
+.option ul{
+	margin: 0 auto;
+	width: 480px;	
+}
+.automovil .box-option ul,
+.hijos .box-option ul{
+	width: 286px;
+}
+.ingresos .box-option ul{
+	width: 240px;
+}
+.option ul li{
+	background: url('../images/misc-line.jpg') no-repeat;
+	padding-bottom: 20px;
+	background-position: center 40px;
+	font-size: 26px;
+	width: 100%;
+	float: none;
+	margin: 0 auto;
+}
+.automovil.option ul li,
+.hijos.option ul li,
+.credito.option ul li{
+	background: none;
+}
+.vivienda .option ul li{
+	margin: 0;
+}
+.ingresos .box-option ul li{
+	background-position: 100px 39px;
+}
+.option ul li a{
+	display: block;
+}
+.credito .box-option > ul{
+	width: 286px;
+	overflow: hidden;
+}
+.automovil .box-option li,
+.hijos .box-option li,
+.credito .box-option li{
+	float: left;
+	width: auto;
+	margin-right: 13px;
+}
+.content-perfilar li .vivienda.back div.box-option{
+	margin: 0 auto;
+}
+.vivienda.back .box-option li{
+	padding-bottom: 30px;
+	background-position: 86px 40px;
+}
+.vivienda.back .box-option a{
+	text-align: center;
+	display: block;
+	width: 225px;
+	font-size: 19px;
+}
+.ocupacion.back .box-option a{
+	text-align: center; 
+}
+.ingresos.back .box-option a{
+	text-align: center;
+	width: 256px;
+}
+
+/* RESULTADOS */
+
+.hide{
+	display: none;
+}
+.resultado{
+	position: relative;
+}
+.resultado.vivienda{
+	float: right;
+	width: 46.4%;
+}
+.resultado .box-option{
+	position: absolute;
+	top: 22%;
+	width: 100%;
+}
+.resultado .box-option h3{
+	color: #29bcf5;
+	font-size: 30px;
+	line-height: 40px;
+	font-family: 'Palanquin-Regular';
+}
+.resultado .box-option h3 strong{
+	display: block;
+	font-weight: bold;
+}
+.resultado.vivienda .box-option h3 strong{
+	font-size: 26px;
+	line-height: 33px;
+}
+.resultado.automovil .box-option h3 strong,
+.resultado.hijos .box-option h3 strong,
+.resultado.credito .box-option h3 strong{
+	display: inline;
+}
+.resultado a{
+	position: relative;
+	bottom: 50px;
+	font-family: 'Palanquin-Bold';
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+
+/* BLOQUE NEXT */
+
+.resultado.next{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.resultado.next a,
+.resultado.next h3{
+	color: #fff;
+	line-height: 58px;
+	font-family: 'Palanquin-Regular';
+}
+.resultado.next .box-option h3{
+	font-size: 29px;
+}
+.resultado.next a.next{
+	font-weight: bold;
+	text-transform: none;
+}
+
+/* RESULTADO FINAL */
+
+.cards-ofertas {
+    width: 480px !important;
+    height: 240px;
+}
+
+.content-resultado .inner-content{
+	padding: 110px;
+	max-width: 1920px;
+}
+.content-resultado .col-left{
+	float: left;
+	position: relative;
+}
+.content-resultado .col-left a.volver{
+ 	background: #29bcf5;
+    bottom: -394px;
+    color: #fff;
+    padding: 13px 15px;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Palanquin-Bold";
+}
+.box-title p{
+	color: #29bcf5;
+	font-family: "Palanquin-Bold";
+	font-size: 26px;
+}
+.content-resultado h1{
+	font-family: "Palanquin-Regular";
+	color: #29bcf5;    
+	margin-top: 20px;
+	font-size: 60px;
+	line-height: 60px;
+}
+.content-resultado h1 strong{
+	font-weight: bold;
+}
+.content-resultado .col-right{
+	padding-top: 20px;
+	float: right;
+}
+.content-resultado .col-right li{
+	float: left;
+	margin: 0 12px 12px 0; 
+}
+.content-resultado .col-right .front{
+	position: relative;
+}
+.content-resultado .col-right .front .box-ofertas{
+	display: block;
+    left: 10%;
+    position: absolute;
+    top: 70px;
+}
+
+.content-resultado .col-right .afore .front .box-ofertas,
+.content-resultado .col-right .consumo .front .box-ofertas {
+	top: 90px;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+}
+
+.content-resultado .col-right .box-ofertas h2{
+	font-size: 48px;
+	display: block;
+	text-align: center;
+	font-family: "Palanquin-Bold";
+	margin-bottom: 15px;
+}
+.content-resultado .col-right .box-ofertas p{
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	font-family: "Palanquin-Regular";
+	width: 370px;
+}
+.cards-ofertas .bx-wrapper {
+     left: 0;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+     margin: 50px auto 0;
+    width: 480px;
+}
+.bx-wrapper .bx-viewport .bxslider li{
+	width: 480px!important;
+}
+.bx-wrapper .bx-viewport {
+    height: 220px !important;
+    overflow: hidden;
+}
+.cards-ofertas .bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.cards-ofertas .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background: #29bcf5;
+}
+.cards-ofertas .bx-wrapper .bx-pager .bx-pager-item, 
+.cards-ofertas .bx-wrapper .bx-controls-auto .bx-controls-auto-item{
+	padding: 3px;
+}
+.bx-wrapper .bx-pager{
+	display: none;
+}
+.box-perfil{
+	padding: 0 48px 10px;
+	overflow: hidden;
+	height: 220px;
+}
+.box-perfil h3{
+	font-family: "Palanquin-Regular";
+    font-size: 23px;
+    text-align: center;
+}
+.box-perfil h2{
+	font-family: 'Palanquin-Bold';
+	display: block;
+    font-size: 34px;
+    padding: 7px 0;
+    text-align: center;
+}
+.box-perfil p{
+	font-family: 'Palanquin-Thin';
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.bxslider p.noFound {
+    display: block;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	top: 40%;
+}
+
+@media screen and (max-width: 1722px){
+	
+	.content-home{
+		height: 951px;		
+	}
+	.inner-content{
+		padding-top: 190px;
+	}
+
+	ul.box-cards{
+		left: 11%;
+		position: relative;
+		margin-top: 80px;
+	}
+	header .btn-back{
+		margin-top: -46px;
+	}
+	.col-1 > div{
+		height: 345px;
+	}
+	.col-2 .resultado.credito, .col-2 > .box-credito{
+		height: 172px;
+	}
+	.col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 361px;
+	}
+	.content-perfilar li.col-3{
+		padding-top: 171px;
+	}
+	.cardVivienda{
+		left: 66px;
+	}
+	.content-resultado .inner-content {
+	    max-width: 1722px;
+	    padding: 0 30px;
+	}
+	.col-3 > .box-ingresos{
+		height: 361px;
+	}
+	.content-resultado .col-left a.volver{
+		bottom: -370px;
+	}
+	.content-perfilar{
+		height: 951px;
+		padding-top: 70px;
+	}
+	.content-resultado{
+		height: 951px;
+		padding-top: 115px;
+	}
+	.bx-wrapper .bx-viewport .bxslider li{
+	}
+	.content-resultado h1{
+		font-size: 48px;
+	}
+	.vivienda.back .box-option a{
+		width: 212px;
+	}
+	.resultado.ingresos.resultadoIngresos, .col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 360px;
+	}
+	.content-resultado .col-left a.volver {
+    	bottom: -458px;
+	}
+	.vivienda.option.front, .vivienda.option.back {
+    	position: relative;
+	}
+
+	.bx-wrapper .bx-controls-direction a {
+		top: 35%;
+	}
+
+	.box-perfil {
+		height: 186px;
+	}
+}
+@media screen and (max-width: 1600px){
+	
+	.inner-content {
+    	padding-top: 210px;
+	}
+	.content-home{
+		height: 820px;
+	}
+	.content-perfilar{
+		height: 820px;
+		padding-top: 10px;
+	}
+	.content-resultado{
+		height: 820px;
+		padding-top: 30px;
+	}
+	.col-1 > div {
+    	height: 322px;
+	}
+	.resultado.ingresos.resultadoIngresos, .col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 336px;
+	}
+	.cardVivienda{
+		left: 62px;
+	}	
+	.option ul{
+		width: 100%;
+	}
+	.box-option a{
+		font-size: 22px;
+	}
+	.vivienda.back .box-option li{
+		background-position: 86px 34px;
+	}
+	.vivienda.back .box-option a{
+		width: auto;
+		font-size: 16px; 
+	}
+	.col-2 .resultado.credito, .col-2 > .box-credito{
+		height: 162px;
+	}
+	.col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 337px;
+	}
+	.content-perfilar li.col-3{
+		padding-top: 162px;
+	}
+	.col-3 > .box-ingresos{
+		height: 337px;
+	}		
+	.resultado.ocupacion .box-option{
+		left: 0;
+		width: 100%;
+	}
+	.resultado.hijos .box-option{
+		left: 0;
+		width: 100%;
+	}
+	.content-resultado .col-left a.volver{
+		bottom: -370px;
+	}
+	.box-perfil{
+		height: 230px;
+		width: 98%;
+	}
+	.box-perfil h2{
+		font-size: 33px;
+	}
+
+}
+
+@media screen and (max-width: 1440px){
+	.content-home{
+		height: 820px;
+	}
+	.inner-content{
+		padding-top: 270px;
+	}
+	.content-perfilar{
+		padding-top: 10px;
+		height: 820px;
+	}
+	.content-resultado {
+    	height: 820px;
+    	padding-top: 55px;
+	}
+	.col-1 > div{
+		height: 299px;
+	}	
+	.cardVivienda {
+    	left: 55px;
+	}
+	.vivienda.back .box-option li{
+		background-position: 69px 34px;
+	}
+	.font-42{
+		font-size: 34px;
+	}
+	.font-48{
+		font-size: 40px;
+	}
+	.content-perfilar li .option div.box-option{
+		top: 16%;
+	}
+	.content-perfilar li .ocupacion.back div.box-option{
+		top: 5%;
+	}
+	.col-2 .resultado.credito, .col-2 > .box-credito{
+		height: 148px;
+	}
+	.col-3 > .box-ingresos,
+	.col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 307px;
+	}
+	.resultado.ingresos.resultadoIngresos, .col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 308px;
+	}
+	.content-perfilar li.col-3{
+		padding-top: 147px;
+	}
+	.resultado .box-option{
+		top: 17%;
+	}
+	.resultado .box-option h3{
+		font-size: 27px;
+	}
+	.cards-ofertas{
+		width: 414px!important;
+		height: 207px;
+	}
+	.cards-ofertas .bx-wrapper{
+	    top: -20px;
+	}
+	.box-perfil h2{
+		font-size: 35px;
+	}
+	.box-perfil{
+		width: 90%;
+		height: 230px;
+	}
+	.content-resultado .col-left a.volver {
+    	bottom: -277px;
+	}
+
+	.content-resultado .col-right .front .box-ofertas {
+		left: 4%;
+	   	top: 50px;
+	}
+
+	.content-resultado .col-right .afore .front .box-ofertas,
+	.content-resultado .col-right .consumo .front .box-ofertas {
+		top: 70px;
+	}
+
+}
+
+@media screen and (max-width: 1366px){
+	
+	.content-home{
+		height: 688px;
+	}
+	.inner-content{
+		padding-top: 180px;
+	}
+	.content-perfilar {
+    	height: 688px;
+    	padding-top: 0;
+	}
+	.content-resultado {
+    	height: 688px;
+    	padding-top: 10px;
+	}
+	.font-48{
+		font-size: 37px;
+	}
+	.col-1 > div{
+		height: 283px;
+	}
+	.col-2 > .box-hijos{
+		height: 118px;
+	}
+	.col-3 > .box-automovil{
+		height: 118px;
+	}
+	.vivienda.option.front, .vivienda.option.back{
+		margin-left: 0;
+	}
+	.box-option h3{
+		margin-bottom: 16px;
+	}
+	.vivienda .box-option h3{
+		font-size: 19px;
+	}
+	.resultado .vivienda .box-option h3{
+		font-size: 19px;
+	}
+	.resultado.next a, .resultado.next h3{
+		line-height: 65px;
+	}
+	.col-2 .resultado.credito, .col-2 > .box-credito{
+		height: 140px;
+	}
+	.col-3 > .box-ingresos, .col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 290px;
+	}
+	.resultado.ingresos.resultadoIngresos, .col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 290px;
+	}
+	.content-perfilar li.col-3{
+		padding-top: 140px;
+	}
+	.automovil.resultado .box-option h3,
+	.credito.resultado .box-option h3{
+		font-size: 25px
+	}
+	.cards-ofertas{
+		width: 408px!important;
+		height: 205px;
+
+	}
+	.cards-ofertas .bx-wrapper{
+	    top: -18px;
+	}
+	.box-perfil{
+		width: 83%;
+		height: 166px;
+	}
+	.box-perfil h2{
+		font-size: 31px;
+	}
+	.content-resultado .col-left a.volver {
+    	bottom: -258px;
+	}
+}
+
+@media screen and (max-width: 1280px){
+	
+	.content-home{
+		height: 720px;
+	}
+	.content-perfilar{
+		height: 720px;
+		padding-top: 10px;
+	}
+	.content-resultado {
+    	height: 720px;
+        padding-top: 10px;
+	}
+	.col-1 > div{
+		height: 272px;
+	}
+	.col-2 .resultado.credito, .col-2 > .box-credito{
+		height: 133px;
+	}
+	.col-3 > .box-ingresos, .col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 275px;
+	}
+	.content-perfilar li.col-3{
+		padding-top: 132px;
+	}
+	.resultado.ingresos.resultadoIngresos, .col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 276px;
+	}
+	.vivienda.option.front, .vivienda.option.back{
+		margin-left: 0;
+	}
+	.box-option p{
+		font-size: 16px;
+	}
+	.box-option a{
+		font-size: 19px;
+	}
+	.vivienda.back .box-option li{
+		background-position: 62px 34px;
+		padding-bottom: 27px;
+	}
+	.ingresos .box-option ul li{
+		background-position: 100px 29px;
+	}
+	.vivienda.back .box-option a{
+		font-size: 15px;
+	}
+	.option ul li{
+		background-position: center 33px;
+	}
+	.hijos .box-option > ul,
+	.automovil .box-option > ul,
+	.credito .box-option > ul{
+		width: 286px;
+	}
+	.resultado.vivienda .box-option h3 strong{
+		font-size: 17px;
+		line-height: 25px;
+	}
+	.resultado.next .box-option h3{
+		font-size: 25px;
+	}
+	.resultado .box-option a{
+		font-size: 17px;
+	}
+	.cards-ofertas {
+    	height: 185px;
+    	width: 373px !important;
+	}
+	.content-resultado .col-right .front .box-ofertas{
+	    top: 40px;
+		left: 1%;
+	}
+	.cards-ofertas .bx-wrapper{
+		 top: -10px;
+		 height: 161px;
+	}
+	.box-perfil{
+		    overflow: hidden;
+	    padding: 0px 28px 10px;
+	    width: 80%;
+	    height: 162px;
+	    margin-top: 0px;
+	}
+
+	.bx-wrapper .bx-viewport .bxslider li {
+
+	}
+
+	.box-perfil h2{
+		font-size: 31px;
+	}
+	.content-resultado .col-left a.volver {
+    	bottom: -210px;
+	}
+
+}
+
+/* IPAD */
+
+@media screen and (max-width: 1024px){
+	body{
+		background: #000;
+	}
+	header{
+		height: 54px;
+	}
+	.content-home {
+	    height: 641px;
+	    background-size: auto 800px;
+	    background-position: -165px -41px;
+	    background-color: #000;
+	}
+	.content-perfilar{
+		height: 510px;
+		padding-top: 50px;		
+	}
+	.content-resultado{
+		height: 492px;
+		padding-top: 15px;
+	}
+	.content-resultado .inner-content {
+	    max-width: 1722px;
+	    padding: 40px 30px;
+	    height: 609px;
+	}	
+	a.logo{
+    	float: left;
+    	width: 156px;
+    	height: auto;
+    	margin-top: 7px;
+	}
+	header .btn-back {
+	    margin-top: -29px;
+	    width: 30px;
+	    height: auto;
+	}	
+	header .btn-back img{
+		width: 100%;
+		height: auto;
+	}
+	ul.box-cards{
+		left: 8.5%;
+		margin-top: 40px;
+	}
+	.col-1 > div{
+		height: 160px;
+	}
+	.col-2 .resultado.credito, .col-2 > .box-credito{
+		height: 80px;
+	}
+	.resultado.ingresos.resultadoIngresos, .col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 163px;
+	}
+	.col-3 > .box-ingresos, .col-2 .resultado.ocupacion, .col-2 > .box-ocupacion{
+		height: 163px;
+	}
+	.cardVivienda{
+		left: 30px;
+	}
+	.content-perfilar li.col-3{
+		padding-top: 79px;
+	}
+	.content-perfilar li .option div.box-option{
+		top: 10%;
+	}
+	.box-option a{
+		font-size: 13px;
+	}
+	.ocupacion .box-option a{
+		font-size: 11px;
+	}
+	.box-option h3{
+		font-size: 17px;
+	}
+	.ocupacion .box-option h3{
+		font-size: 15px;
+	}
+	.box-option p{
+		font-size: 13px;
+	}
+	.font-42{
+		font-size: 20px;
+	}
+	.font-48{
+		font-size: 23px;
+	}
+	.automovil .box-option li, .hijos .box-option li, .credito .box-option li{
+		height: 20px;
+		overflow: hidden;
+	}
+	.edad.option ul li{
+		background-position: center 24px;
+		padding-bottom: 16px;
+	}
+	.ocupacion.option ul li{
+		background-position: center 18px;
+		padding-bottom: 12px; 
+	}
+	.content-perfilar li .ingresos div.box-option{
+		top: 11%;
+	}	
+	.ingresos .box-option h3{
+		font-size: 15px;
+	}
+	.ingresos .box-option ul{
+		width: 220px;
+		margin: 0 auto;
+	}
+	.ingresos .box-option ul li {
+    	background-position: 85px 24px;
+	}
+	.ingresos.back .box-option a{
+		width: 200px;
+	}
+	.vivienda .box-option h3{
+		font-size: 12px;
+	}
+	.vivienda.back .box-option li{
+		background-position: center 16px;
+		padding-bottom: 15px;
+	}
+	.vivienda.back .box-option a{
+		font-size: 9px;
+	}
+	.resultado .box-option{
+		top: 7%;
+	}
+	.hijos .box-option > ul, .automovil .box-option > ul, .credito .box-option > ul{
+		margin: -1px auto;
+		width: 126px;
+	}	
+	.automovil.resultado .box-option h3, .credito.resultado .box-option h3{
+		font-size: 15px;
+	}
+	.credito .box-option a, .hijos .box-option a, .automovil .box-option a{
+		width: 40px;
+		height: 40px;
+	}
+	.resultado a{
+		bottom: 30px;
+		font-size: 10px;
+	}
+	.resultado .box-option h3{
+		font-size: 18px;
+		line-height: 29px;
+	}
+	.resultado.next .box-option h3{
+		font-size: 16px;
+	}
+	.resultado.vivienda .box-option h3{
+		font-size: 16px;
+	}
+	.resultado.vivienda .box-option h3 strong{
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.ingresos .box-option ul {
+	    width: 260px;
+	}
+	.cards-ofertas {
+	    height: 155px;
+	    width: 205px!important;
+	    float: left;
+	    position: relative;
+	}
+	.content-resultado h1{
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 45px; 
+	}
+	.content-resultado .col-left a.volver{
+		bottom: -102px;
+	}
+	.content-resultado .col-right .box-ofertas h2{
+		font-size: 22px;
+	}
+	.content-resultado .col-right .front .box-ofertas{
+		width: 97%;
+	}
+	.content-resultado .col-right .box-ofertas p{
+		width: 202px;
+		margin: 0 auto;
+		font-size: 12px;
+	}
+	.resultado .box-option a.next{
+		font-size: 12px;
+		line-height: 46px;
+	}
+	.cards-ofertas .bx-wrapper{
+		height: 98px;
+		top: -4px;
+		width: 205px!important;
+		margin: 0 auto;
+	}
+	.bx-wrapper .bx-viewport{
+		height: 150px!important;
+	}
+	.box-perfil{
+		width: 200px;
+		height: 162px;
+		margin: 0 auto;
+		padding-top: 18px;
+	}
+	.box-perfil h3{
+		font-size: 17px;
+	}
+	.box-perfil h2{
+		font-size: 13px;
+		padding: 6px 20px;
+	}
+	.content-resultado .col-right{
+		float: none;
+		overflow: hidden;
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a{
+		width: 10px;
+		height: 10px;
+	}
+	.box-title p{
+		font-size: 21px;
+	}	
+
+	.bx-wrapper .bx-pager{
+		display: none;
+	}	
+
+	.bx-wrapper .bx-controls-direction a{
+		top: 87%;
+	}
+
+	.bx-wrapper .bx-prev{
+		left: 8px;
+	}
+
+	.bx-wrapper .bx-next {
+	    right: 8px;
+	}
+	.bx-wrapper .bx-viewport .bxslider li{
+		width: auto!important;
+	}	
+}
+

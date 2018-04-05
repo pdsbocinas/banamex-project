@@ -1,0 +1,34 @@
+[{
+    "tieneTarjeta": "NO",
+    "edad": "<24",
+    "ocupacion": "Estudiante",
+    "ingresos": "<15||<50",
+    "tieneHijos": "SI||NO",
+    "tipoVivienda": "Propia||Propia con Hipoteca||Rentada",
+    "tieneAutomovil": "",
+    "oferta": "Apoyamos tus proyectos.",
+    "beneficio": "Con B·smarT, tu primera tarjeta,  acumulas el 5% de cada compras que hagas con ella, en Puntos Premia que puedes utilizar como efectivo,  y recibes certificados de descuento para restaurantes, bares, tiendas de  ropa y cines."
+  },
+  {
+    "tieneTarjeta": "NO",
+    "edad": "<24",
+    "ocupacion": "Empleado||Empresario",
+    "ingresos": "<15||<50",
+    "tieneHijos": "SI||NO",
+    "tipoVivienda": "Propia||Propia con Hipoteca||Rentada",
+    "tieneAutomovil": "",
+    "oferta": "Pagos mensuales y  tasa fija.",
+    "beneficio": "Con Tarjeta Clásica Banamex,  tu eliges la fecha de pago de tu Tarjeta, además podrás diferir tus gastos de salud a 3, 6 o 12 mensualidades fijas cuando quieras"
+  },
+  {
+    "tieneTarjeta": "NO",
+    "edad": "<34",
+    "ocupacion": "Estudiante||Ama de casa",
+    "ingresos": "<15||<50||>50",
+    "tieneHijos": "SI||NO",
+    "tipoVivienda": "Propia||Propia con Hipoteca||Rentada",
+    "tieneAutomovil": "",
+    "oferta": "Crédito hasta los 79 años.",
+    "beneficio": "Con B·smarT, tu primera tarjeta,  acumulas el 5% de cada compras que hagas con ella, en Puntos Premia que puedes utilizar como efectivo., y recibes certificados de descuento para "
+  }
+]

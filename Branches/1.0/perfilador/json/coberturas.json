@@ -1,0 +1,34 @@
+[{
+    "tieneTarjeta": "",
+    "edad": "<24",
+    "ocupacion": "Estudiante||Ama de casa||Empleado||Empresario",
+    "ingresos": "",
+    "tieneHijos": "NO",
+    "tipoVivienda": "Propia||Propia con Hipoteca",
+    "tieneAutomovil": "NO",
+    "oferta": "Protección para tu familia por accidente.",
+    "beneficio": "Tu casa y lo que hay dentro son tu patrimonio, con este seguro está protegido contra eventualidades como robo de electrodomésticos, incendios, inundaciones o daños a otras personas o sus bienes, o daño por terremoto"
+  },
+  {
+    "tieneTarjeta": "",
+    "edad": "<24",
+    "ocupacion": "Estudiante||Ama de casa||Empleado||Empresario",
+    "ingresos": "",
+    "tieneHijos": "NO",
+    "tipoVivienda": "Propia||Propia con Hipoteca",
+    "tieneAutomovil": "SI",
+    "oferta": "Protección para tu patrimonio por robo, daños e imprevistos.",
+    "beneficio": "Tu casa y lo que hay dentro son tu patrimonio, con este seguro está protegido contra eventualidades como robo de electrodomésticos, incendios, inundaciones o daños a otras personas o sus bienes, o daño por terremoto"
+  },
+  {
+    "tieneTarjeta": "",
+    "edad": "<24",
+    "ocupacion": "Estudiante||Ama de casa||Empleado||Empresario",
+    "ingresos": "",
+    "tieneHijos": "NO",
+    "tipoVivienda": "Propia||Propia con Hipoteca",
+    "tieneAutomovil": "SI",
+    "oferta": "Costo preferencial.",
+    "beneficio": "Banamex le ofrece las siguientes coberturas bajo condiciones especiales: Deducible del 5% valor comercial/ valor factura para daños materiales parciales y totales; y del 10% para robo"
+  }
+]

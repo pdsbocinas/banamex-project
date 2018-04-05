@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Banamex Sucursales</title>
+  <link href='http://fonts.googleapis.com/css?family=Palanquin:400,500,700,100,300,200,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <!--<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css" />-->
+  <link rel="stylesheet" href="./css/app.css">
+
+</head>
+
+<body>
+  <header id="header" class="">
+    <img src="./images/logoBanamex.png" class="img-responsive" alt="" />
+    <a href="JavaScript:window.close()" style="float:right; color:#ffffff;text-decoration:none; margin-top:-15px;margin-right:20px;">Cerrar</a>
+  </header>
+  <!-- /header -->
+  <section id="mainContent">
+    <section id="dropBox">
+      <div id="swiperScroll" class="swiper-container">
+
+        <div class="listProd swiper-wrapper ">
+        </div>
+        <!-- Add Scroll Bar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="verProdBtn"></div>
+    </section>
+    <section id="tarjetaBox">
+      <div class="homeDesc">
+        Navega por los productos <span>Banamex</span> <br/> arrástralos al recuadro azul <br/> y diseña tu paquete a medida.
+      </div>
+      <div id="mainProdWrapper" class="prodWrapper" style="display:none;">
+        <div class="imgWrapper imgGeneral">
+          <img src="./images/micuenta.jpg" alt="">
+        </div>
+
+        <div class="prodContentWrapper" id="contentWrapper">
+          <div class="prodTitle">Default</div>
+          <div class="prodSubTitle">Default</div>
+          <div class="columnLeft">
+            <ul class="prodBeneficios ul1">
+            </ul>
+          </div>
+          <div class="columnRight">
+            <ul class="prodBeneficios ul2">
+            </ul>
+            <div class="actionWrapper">
+              <a href="#" class="prodBtn prodLegales">T&eacute;rminos y condiciones</a>
+              <a href="#" class="prodBtn anadir">
+                < Arrastrar a mis productos</a>
+                  <!--a href="#" class="prodBtn prodRequisitos">Requisitos</a-->
+                  <!--<div class="div-iframe oculto">
+									<iframe class="" src="" id="iframeMagico" name='iframePopup' width='1000' height='800' scrolling='no'></iframe>
+									<div class="btn-close">
+										<img src="images/close.png" width="86" height="88">
+									</div>
+								</div>-->
+            </div>
+          </div>
+
+        </div>
+        <div class="prodContentWrapper" id="contentWrapper2">
+          <div class="prodTitle">Default</div>
+          <div class="prodSubTitle">Default</div>
+          <div class="columnLeft">
+            <div class="imgWrapper">
+              <img src="./images/micuenta.jpg" alt="">
+            </div>
+          </div>
+          <div class="columnRight">
+            <ul class="prodBeneficios ul1">
+            </ul>
+            <ul class="prodBeneficios ul2">
+            </ul>
+            <div class="actionWrapper">
+              <a href="#" class="prodBtn prodLegales" target="_blank">T&eacute;rminos y condiciones</a>
+              <a href="#" class="prodBtn anadir">
+                < Arrastrar a mis productos</a>
+                  <!--a href="#" class="prodBtn prodRequisitos" target="_blank">
+									Requisitos
+								</a-->
+            </div>
+          </div>
+
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div id="sliderProductosSeleccionados" class="prodWrapper">
+        <div class="swiper-wrapper">
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <div class="clearfix"></div>
+    <section id="navBox">
+      <!-- Slider main container -->
+      <div id="navSwiper" class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </section>
+  </section>
+  <footer>
+    <ol class="breadcrumb">
+      <li><a href="#" id="homeNav" class="navLink catLink">Home</a></li>
+    </ol>
+  </footer>
+</body>
+<script src="./js/jquery-1.10.2.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.ui.touch-punch.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/swiper.jquery.min.js"></script>
+<script src="./js/underscore.min.js"></script>
+<!--<script src="./js/jquery.mCustomScrollbar.min.js"></script>-->
+<script src="./js/application.js?v=1" type="text/javascript" charset="utf-8"></script>
+
+</html>

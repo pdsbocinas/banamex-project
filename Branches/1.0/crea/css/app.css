@@ -1,0 +1,1161 @@
+body{
+	font-family: arial;	
+	font-size:14px;
+/*	min-height: 1080px;
+	max-height: 1536px;
+	min-width: 1920px;
+	max-width: 2048px;*/
+	position: relative;
+}
+
+/*@font-face {
+    font-family: 'Palanquin-Light';
+    src: url('../fonts/Palanquin-Light.ttf');
+}*/
+
+header, footer{
+	background: url("../images/headerBG.jpg") repeat-x 0 0 transparent;
+	height: 78px;
+}
+
+footer{
+	height: 79px;
+	bottom: 0;
+	width: 100%;
+}
+
+header img{
+	top: 15px;
+	position: relative;
+	left: 10px;	
+}
+
+footer .breadcrumb{
+	padding: 0 105px;
+	background-color: transparent;
+	position: relative;
+	top: 20px;
+	margin-bottom: 0;	
+}
+
+
+footer .breadcrumb li a{
+	color: #FFF;
+	font-size: 120%;
+	width:auto;
+	line-height: 50px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+
+footer .breadcrumb>li+li:before{
+	content: "\003E";
+	font-size: 120%;
+	color: #FFF;
+	padding: 0 5px;
+	line-height: 49px;
+	float: left;
+}
+
+footer .breadcrumb li{
+	font-size: 120%;
+	color: #FFF;
+	display: block;
+	float: left;	
+}
+
+footer .breadcrumb>.active{
+	color: #FFF;
+	font-weight: bold;
+}
+
+#mainContent{
+	/*padding: 20px 30px 110px;
+	background: url("../images/PefiladorFinanciero-Background.png") no-repeat 0 0 transparent;
+	background-size: cover;*/
+}
+
+.pesos{
+	font-family:' Arial';
+	font-size:14px;
+	}
+
+#mainContent #dropBox{
+	background: url("../images/dropBoxBG.jpg") no-repeat;
+	background-size: 100%;
+	height: 612px;
+	width: 23%;
+	float: left;
+	margin-top: 50px;
+}
+
+#mainContent #dropBox img {
+	width:100%;
+}
+
+#mainContent #dropBox #swiperScroll{
+	height: 295px;		
+	overflow-y: auto;
+	top: 160px;
+	width: 90%;
+	margin: 0 auto 55px;	
+}
+
+#mainContent #dropBox .listProd .swiper-slide{
+	margin-bottom: 0px;	
+}
+
+#mainContent #dropBox .listProd .prodBoxSelected{
+	height: 54px;
+	background-color: #FFF;	
+	position: relative;
+}
+
+#mainContent #dropBox .listProd .prodBoxSelected .item{
+    float: left;
+    position: relative;
+    top: 0px;
+    height: 54px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #044688;
+    font-weight: 300;
+    width: 90%;
+    line-height: 52px;
+    overflow: hidden;
+}
+
+#mainContent #dropBox .listProd .prodBoxSelected .closeIcon{
+    float: right;
+    position: relative;
+    top: -52px;
+    right: 10px;
+    font-size: 140%;
+    color: #044688;
+    cursor: pointer;
+}
+#mainContent #dropBox .listProd .prodBoxSelected .closeIcon span.glyphicon {
+    height: 50px;
+    left: 10px;
+    padding: 16px;
+    top: 1px;
+    width: 50px;
+}
+
+#mainContent #dropBox .verProdBtn{
+	background: url('../images/verProdBtn.png') no-repeat 0 0 transparent;
+    background-size: 100%;
+    position: relative;
+    top: 160px;
+    width: 72%;
+    margin: 0 auto;
+    height: 65px;
+    display: none;
+    cursor: pointer;
+		
+}
+
+#mainContent #tarjetaBox{
+	float: left;
+	width: 75%;
+	margin: 50px 0px 0 1%;
+	height:610px;
+	cursor: -webkit-grab;;
+}
+
+#mainContent #tarjetaBox .homeDesc{
+	color: #002d72;
+    font-size: 30px;
+    display: block;
+    margin: 260px 0 0px 19px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#mainContent #tarjetaBox .homeDesc span{
+	font-weight: 700;
+}
+
+#mainContent #tarjetaBox .prodWrapper{
+	background: url("../images/boxProductoBG.png") no-repeat 0 0 transparent;
+	background-size: 100%;
+	height: 614px;
+	width: 95%;
+	margin: 0 auto;
+	z-index: 1000;
+	position: relative;
+}
+
+#mainContent #tarjetaBox .prodWrapper .imgWrapper{
+	position: relative;
+    top: 4em;
+    left: 4%;
+    width: 31%;
+    float: left;
+}
+
+#mainContent #tarjetaBox .prodWrapper .imgWrapper img{ 
+	width:100%;
+	height:auto;
+}
+
+#mainContent #tarjetaBox .prodWrapper .prodContentWrapper{	
+	float: left;
+	position: relative;
+	top: 45px;
+	left: 8%;
+	width: 58%;
+}
+
+#mainContent #tarjetaBox .prodWrapper #contentWrapper2{	 
+	 width: 80%;
+}
+
+#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodTitle{	
+	color: #a3abc2;
+	font-size: 55px;
+	font-weight: 400;
+}
+
+#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodSubTitle{	
+	color: #00bdf2;
+	margin-bottom: 20px;
+    max-width: 730px;
+    font-size: 25px;
+    word-break: break-word;
+    font-weight: 300;
+}
+
+#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .prodSubTitle{	 
+	max-width: 1050px;
+}
+
+#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .columnLeft, #mainContent #tarjetaBox .prodWrapper .prodContentWrapper .columnRight{
+	float: left;
+    width: 100%;
+
+}
+
+#mainContent #tarjetaBox .prodWrapper #contentWrapper .columnLeft {
+	width: 60%;
+}
+
+#mainContent #tarjetaBox .prodWrapper #contentWrapper .columnRight { 
+	width: 40%;
+}
+
+#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .columnLeft {
+	width: 40%;
+}
+
+#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .columnLeft .imgWrapper {
+	width: 100%;
+}
+
+#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .columnRight { 
+	width: 60%;
+}
+
+#mainContent #tarjetaBox .prodWrapper .prodContentWrapper ul.prodBeneficios {
+    margin-bottom: 15px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    float: left;
+}
+
+#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .actionWrapper {
+	width: 59%;
+    float: left;
+}
+
+
+#mainContent #tarjetaBox .prodWrapper .prodContentWrapper ul.prodBeneficios li {  
+    line-height: 1.15em;
+    display: block;
+    width: 80%;
+    font-weight: 300;
+    color: #000000;
+    font-size: 16px;
+    padding-left: 20px;
+    text-align: left;
+    background: url("../images/bulletBlue.png") no-repeat left 6px transparent;
+    margin-bottom: 5px;
+}
+
+
+
+#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodBtn{	
+	width: 216px;
+	height: 40px;
+	display: block;
+	background-color: #00bdf2;
+	color: #FFF;
+	text-align: center;
+	line-height: 40px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	text-decoration: none;
+	margin-top: 10px;
+
+}
+
+/*TEMPLATE PRODUCTOS*/
+
+
+
+#mainProdWrapper #contentWrapper2,
+.prodContentWrapper#contentWrapper2{
+	display:none;
+	width:80%;
+	text-align:center;
+}
+
+#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 .prodTitle,
+#sliderProductosSeleccionados .swiper-wrapper .swiper-slide .prodContentWrapper#contentWrapper2 .prodTitle
+{
+	font-family: arial;
+	color: #a3abc2;
+    font-size: 55px;
+    font-weight: 400;
+}
+
+#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 .imgWrapper,
+#sliderProductosSeleccionados .swiper-wrapper .swiper-slide .prodContentWrapper#contentWrapper2 .imgWrapper{
+	top: 30px;
+}
+
+#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 .imgWrapper img,
+#sliderProductosSeleccionados .swiper-wrapper .swiper-slide .prodContentWrapper#contentWrapper2 .imgWrapper img{
+	max-height: 330px;
+	max-width: 400px;
+}
+
+#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 .columnLeft,
+#sliderProductosSeleccionados .swiper-wrapper .swiper-slide .prodContentWrapper#contentWrapper2 .columnLeft{
+	padding-left:100px;
+}
+
+#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 .columnRight,
+#sliderProductosSeleccionados .swiper-wrapper .swiper-slide .prodContentWrapper#contentWrapper2 .columnRight {
+	padding-left: 50px;
+	max-height: 390px;
+    overflow: hidden;
+ }
+
+ #mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 ul.prodBeneficios,
+#sliderProductosSeleccionados .swiper-wrapper .swiper-slide .prodContentWrapper#contentWrapper2 ul.prodBeneficios {
+ 	width:auto;
+ 	max-width: 490px;
+ }
+
+ #mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 ul.prodBeneficios.ul1,
+ #sliderProductosSeleccionados .swiper-wrapper .swiper-slide .prodContentWrapper#contentWrapper2 ul.prodBeneficios.ul1 {
+ 	padding-top: 30px;
+ }
+
+/*FIN DE TEMPLATE PRODUCTOS*/
+
+
+
+#mainContent #navBox{
+	width: 100%;
+	margin-top: 67px;
+	padding-bottom: 40px;
+	
+
+}
+
+#mainContent #navBox #navSwiper{
+	height: 153px;
+	margin: 0 70px;
+    
+}
+
+
+#navBox .swiper-button-next {
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    top: 82%;
+}
+
+#navBox .swiper-button-prev {
+	left: 10px;
+	width: 50px;
+	top: 82%;
+    height: 50px;
+    z-index: 10;
+}
+
+
+#mainContent #navBox #navSwiper .swiper-wrapper .swiper-slide{
+	background: url("../images/boxCateBG.png") no-repeat 0 0 transparent;
+	background-size: 100%;
+	width: 23% !important;
+	display: block;
+	}
+
+#mainContent #navBox #navSwiper .swiper-wrapper .swiper-slide .catDesc{
+	color: #ffffff;
+	font-size: 25px;
+	font-weight: 700;
+	padding: 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#sliderProductosSeleccionados{
+	display: none;
+}
+
+#sliderProductosSeleccionados .sliderInnerHidden{
+	width: 100%;
+	overflow: hidden;
+}
+
+#sliderProductosSeleccionados.swiper-container-horizontal > .swiper-pagination{
+	bottom: 30px;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+	right: -40px;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+	left: -40px;
+}
+
+.agregar {
+	color: #2cbff6;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    left: -476px;
+    line-height: 88px;
+    position: absolute;
+    top: -58px;
+    width: 280px;
+}
+#contentWrapper2 .agregar {
+    color: #2cbff6;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    left: -76px;
+    line-height: 88px;
+    position: absolute;
+    top: -48px;
+    width: 280px;
+}
+#contentWrapper .agregar{
+	color: #00bdf2;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 88px;
+    position: absolute;
+    top: -54px;
+    width: 280px;
+}
+
+#contentWrapper2 .agregar {
+	margin-left: 90px;
+}
+.agregar:hover  {
+	color: #2cbff6;	
+}
+
+
+#sliderProductosSeleccionados .swiper-button-next {
+	right: -37px;
+    top: 47%;
+}	
+
+#sliderProductosSeleccionados .swiper-button-prev {
+	left: -3%;
+    top: 47%;
+}
+
+.div-iframe {
+	background-color: #ffffff;
+    padding: 0px 10px;
+    width: 1000px;
+    top: 1px;
+    position: absolute;
+    z-index: 1;
+    left: -500px;
+    box-shadow: 0px 0px 10px #000000;
+}
+.btn-close{
+	position: absolute;
+    top: 0px;
+    right: -100px;
+    z-index: 9999;
+}
+
+.oculto{
+    display:none;
+}
+
+.div-iframe iframe {	                
+	position:relative;
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #7FD8FA;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #044688;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #7FD8FA;
+}
+
+@media only screen and (max-width : 1722px) {   
+	#mainContent #dropBox {
+	    height: 553px;
+	}
+
+	#mainContent #dropBox .verProdBtn {
+		top: 120px;
+	}
+
+	#mainContent #dropBox #swiperScroll {
+		top: 140px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper {
+	    height: 553px;
+	}
+
+	#mainContent #navBox #navSwiper {
+		 height: 135px;
+		 margin-bottom:2px;
+	}
+
+	#mainContent #navBox {
+	   margin-top: 93px;
+	}
+
+	#mainContent #tarjetaBox .homeDesc {
+		  margin: 265px 0 0px 90px;
+    	 width: auto;
+	}
+
+	#mainContent #tarjetaBox {
+		height: 548px;
+	}
+
+	#contentWrapper .agregar {
+		margin-left: 30px;
+	}
+
+}
+
+@media only screen and (max-width : 1600px) {  
+	#mainContent #dropBox {
+	    height: 514px;
+	}
+
+	#mainContent #dropBox #swiperScroll {
+		height: 244px;
+    	margin: 0 auto 30px;
+    	top: 130px;
+	}
+
+	#mainContent #dropBox .listProd .swiper-slide {
+		margin-bottom: 5px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper {
+		height: 516px;
+		width: 93%;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected {
+		 height: 50px;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected .item {
+		line-height: 48px;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected .closeIcon {
+		top: -1px;
+		position: absolute;
+	}
+
+	#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 ul.prodBeneficios.ul1, 
+	#sliderProductosSeleccionados .swiper-wrapper .swiper-slide .prodContentWrapper#contentWrapper2 ul.prodBeneficios.ul1 {
+		padding-top:0;
+	}
+
+	#mainContent #navBox #navSwiper {
+		height: 124px;
+	}
+
+	#mainContent #navBox {
+		margin-top: 30px;
+		padding-bottom: 22px;
+	}
+	.agregar{
+		position: absolute;
+		top: 351px;
+	}
+
+	#mainContent #tarjetaBox .homeDesc {
+	    margin: 220px 0 0px 90px;
+	}
+
+	#mainContent #tarjetaBox {
+		height: 511px;
+	}
+	footer{
+		height: 80px;
+	}
+}
+
+@media only screen and (max-width : 1440px) {   
+	#mainContent #dropBox {
+	   height: 462px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper {
+	  height: 467px;
+	}
+
+	#mainContent #dropBox #swiperScroll {
+		height: 240px;
+		top: 115px;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected {
+		height: 45px;	
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected .item {
+		line-height: 42px;
+	}
+
+	#mainContent #dropBox .listProd .swiper-slide {
+		margin-bottom: 3px;
+	}
+
+	#mainContent #dropBox .verProdBtn {
+		top: 120px;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected .closeIcon {
+		top: -2px;
+		position: absolute;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .prodSubTitle {
+		line-height: 25px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 {
+		width: 90%;
+		left: 4%;
+
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper {
+		top:5%;
+	}
+
+	#mainContent #navBox #navSwiper {
+		height: 108px;
+	}
+
+	#mainContent #navBox {
+    	margin-top: 98px;
+	}
+
+	#contentWrapper .agregar {
+		font-size: 18px;
+	    position: absolute;
+	    top: 365px;
+	    left: 0px;
+	}
+
+	#contentWrapper2 .agregar {
+		font-size: 18px;
+	    position: absolute;
+	    top: 353px;
+	    right:50px;
+	}
+
+	#mainContent #tarjetaBox {
+		height: 461px;
+	}
+
+	#mainContent #tarjetaBox .homeDesc {
+		margin: 185px 0 0 297px;
+	}
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodTitle{
+		font-size: 34px;
+	}
+	footer{
+		height: 80px;
+	}
+}
+
+
+@media only screen and (max-width : 1366px) { 
+	#mainContent #tarjetaBox .homeDesc {
+		font-size:20px;
+	}
+	#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 .prodTitle, #sliderProductosSeleccionados .swiper-wrapper .swiper-slide .prodContentWrapper#contentWrapper2 .prodTitle{
+		font-size: 277%;
+	}
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodSubTitle{
+		font-size: 21px;
+	}
+
+	#mainContent #navBox {
+		margin-top: 7px;
+	    padding-bottom: 10px;
+	}
+
+	#mainContent #dropBox {
+		height: 439px;
+	}
+
+	#mainContent #navBox #navSwiper .swiper-wrapper .swiper-slide .catDesc {
+		font-size: 20px;
+	}
+
+	#mainContent #dropBox .verProdBtn {
+		top: 105px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .prodSubTitle {
+		font-size: 20px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 {
+		width: 100%;
+    	left: 0%;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected .item {
+		font-size: 15px;
+		line-height: 41px;
+	}
+	#mainContent #tarjetaBox .prodWrapper {
+		height: 433px;
+	}
+
+	#sliderProductosSeleccionados.swiper-container-horizontal > .swiper-pagination {
+		bottom:20px;
+	}
+
+	#mainContent #navBox #navSwiper {
+		height: 102px;
+	}
+
+	#contentWrapper2 .agregar {
+	   top: 350px;	
+	}
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodTitle{
+		font-size: 38px;
+	}
+	#contentWrapper .agregar{
+		top: 305px;
+	}
+
+	#mainContent #tarjetaBox {
+	    height: 437px;
+	}
+
+	#mainContent #tarjetaBox .homeDesc {
+		 margin: 185px 0 0 39px;
+	}
+	
+}
+
+@media only screen and (max-width : 1280px) {
+	
+	#mainContent {
+        height: 543px;
+	}
+	#mainContent #tarjetaBox .prodWrapper .imgWrapper{
+		top: 2em;
+	}  
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodTitle {
+		font-size:35px;
+		padding-bottom: 12px;
+		line-height: 41px;
+	}
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper ul.prodBeneficios li{
+		font-size: 13px;
+	}	
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodSubTitle {
+		font-size: 20px;
+    	line-height: 20px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper .columnLeft {
+		width:55%;
+	}
+
+	#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 .prodTitle {
+		font-size:45px;
+	} 
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .prodSubTitle {
+		margin-bottom: 5px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper  {
+		top: 4%;
+	}
+	#mainContent #dropBox .verProdBtn {
+		top: 85px;
+	}
+
+	#mainContent #dropBox #swiperScroll {
+		height: 230px;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected {
+		height: 40px;
+	}
+
+	#mainContent #dropBox .listProd .swiper-slide {
+		margin-bottom:0;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper {
+		height: 406px;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected .item {
+		font-size: 16px;	
+		line-height: 39px;
+    }
+    #mainContent #dropBox .listProd .prodBoxSelected .closeIcon {
+    	top: -4px;
+    	position: absolute;
+    }
+
+    #mainContent #navBox #navSwiper {
+		height: 95px;
+	}
+
+	#mainContent #dropBox {
+		    height: 410px;
+		    margin-top: 20px;
+	}
+
+	#mainContent #navBox {
+		margin: 13px 0 0;
+    	padding-bottom: 0;
+	}
+
+	#contentWrapper2 .agregar {
+	   top: 316px;
+	
+	}
+
+	#contentWrapper .agregar {
+	   top: 306px;
+	
+	}
+
+	#mainContent #tarjetaBox {
+	     height: 380px;
+	     margin-top: 20px;
+	}
+
+	#mainContent #tarjetaBox .homeDesc {
+		 margin: 140px 0 0 39px;
+	}
+	#mainContent #navBox #navSwiper .swiper-wrapper .swiper-slide{
+		width: 21.7%!important;
+	}
+	footer{
+		height: 79px;
+	}
+
+	#navBox .swiper-button-next,
+	#navBox .swiper-button-prev {
+		top: 81%;
+	}
+
+}
+
+
+/*Retina iPad in portrait & landscape*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+		min-width: 1024px;
+		min-height: 675px;
+
+	}
+
+	#mainContent {
+		width:1024px;
+	}
+
+	#mainContent #tarjetaBox .homeDesc{
+		    top: 14px;
+	}
+
+	/*#mainContent #dropBox{
+		height: auto;
+	}*/
+
+	#mainContent #dropBox {
+		height: auto;
+	    background-size: 100%;
+    	width: 24%;
+	    background-repeat: no-repeat;
+	    height: 344px;
+	    margin-top: 30px;
+	  
+	}
+
+	#mainContent #tarjetaBox{
+		height: 334px;
+	    float: left;
+	    width: 73%;
+	    margin-left: 10px;
+	}	
+
+	#mainContent #navBox {
+		margin: 6% 0px 5%;
+    	height: 99px;
+	}
+
+	#mainContent #navBox #navSwiper  {
+		height: 101px;
+	}
+
+	#mainContent #navBox #navSwiper .swiper-wrapper .swiper-slide {
+		 width: 261px !important;
+	    margin-right: 50px !important;
+	    background-size: 277px;
+	    height: 100px;
+	}
+
+	#mainContent #navBox #navSwiper .swiper-wrapper .swiper-slide .catDesc {
+		line-height: 25px;
+    	padding: 0 10px;
+    	display: block;
+    	vertical-align:top;
+    	position: relative;
+    	top: 50%;
+		-webkit-transform: translateY(-50%);
+	}
+
+	
+
+	#mainContent #tarjetaBox .prodWrapper .imgWrapper{
+		width: 30%;
+		left: 2%;
+	    padding-left: 15px;
+	}
+
+	#contentWrapper .agregar {
+		font-size: 14px;
+	    position: absolute;
+	    top: 255px;
+	    left: 0px;
+	}
+
+	#contentWrapper2 .agregar {
+		font-size: 14px;
+	    position: absolute;
+	    top: 255px;
+	    right:50px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .imgWrapper img {
+		width: 100%;
+    	height: auto;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper {
+	    top: 10px;
+    	left: 35px;
+	}		
+	
+	#mainContent #dropBox .listProd .prodBoxSelected{
+		height: 34px!important;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected .item{
+	    top: 0px;
+	    height: 37px;
+	    font-size: 12px;
+	    line-height: 32px;
+	    width: 180px;
+	}
+
+	#mainContent #dropBox .listProd .prodBoxSelected .closeIcon{
+	    top: 5px;	 
+	    font-size: 120%;		
+	}
+
+	#mainContent #tarjetaBox .prodWrapper{
+	    height: 305px;
+    	background-size: 100%;
+    	width: 90%;
+	}
+
+	#mainContent #dropBox .listProd .swiper-slide{
+		height: 38px!important;
+	}
+
+	#mainContent #dropBox .verProdBtn{
+	   top: 50px;
+	    width: 190px;
+	    height: 40px;
+	    background-size: 187px;
+
+	}
+	.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+		left: 10px;
+	}
+
+	.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+		right: 10px;
+	}	
+
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodTitle{
+		font-size: 26px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodSubTitle{
+		font-size: 14px;
+        line-height: 15px; 
+        margin-bottom: 5px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper ul.prodBeneficios{
+		width: 230px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper ul.prodBeneficios li{
+		line-height: 14px;
+	    font-size: 12px;
+	    background-position: 0 6px;
+	    margin-bottom: 0px;
+	}	
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .actionWrapper {
+		margin-top: 5px;
+	}	
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper .prodBtn {
+	    width: 165px;
+	    font-size: 14px;
+	    height: 30px;
+	    line-height: 27px;
+	    margin: 5px 0;
+	}
+
+	#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 .prodTitle {
+		font-size:26px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .prodSubTitle {
+		font-size: 14px;	
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .prodBtn { 
+		float:left;
+		margin-right: 10px;
+	}
+
+	#mainContent #dropBox #swiperScroll{
+    	height: 205px;
+    	top: 85px;
+	}
+
+	#sliderProductosSeleccionados .swiper-button-next {
+		background-size: 80%;
+		top: 40%;
+		right: 15px;
+	}
+
+	#sliderProductosSeleccionados .swiper-button-prev {
+	    background-size: 80%;
+	    left: 255px;
+    	top: 40%;
+	}
+
+	#navBox .swiper-button-next {
+		top: 76%;
+	}
+
+	#navBox .swiper-button-prev {
+		top: 76%;	
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .swiper-slide .prodContentWrapper ul.prodBeneficios {
+		width:100%;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .swiper-slide .prodContentWrapper ul.prodBeneficios li {
+		width:100%;
+	}
+
+	#sliderProductosSeleccionados.swiper-container-horizontal > .swiper-pagination {
+	    bottom: 0px;
+	    display:none;
+	}	
+
+	#sliderProductosSeleccionados .swiper-pagination{
+		position:relative;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper .prodContentWrapper#contentWrapper2 {
+	    width: 100%;
+    	left: 0;
+		
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .columnLeft {
+		max-width: 260px;
+	}  
+
+	#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 ul.prodBeneficios.ul1 {
+		padding-top: 0px;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .prodBtn {
+
+	}
+
+	#mainContent #tarjetaBox #mainProdWrapper #contentWrapper2 .columnRight {
+		padding-left:10px;
+		width: 60%;
+	}
+
+	#mainContent #tarjetaBox .prodWrapper #contentWrapper2 .imgWrapper {
+		width: 85%;
+	}
+}
+

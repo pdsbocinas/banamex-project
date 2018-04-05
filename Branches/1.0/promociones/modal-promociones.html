@@ -1,0 +1,49 @@
+<section class="min-width promociones modal ofertas">
+    <div class="content">
+        <ul class="block-header">
+            <li class="breadcumb">
+                <ul>
+                    <li>Promociones</li>
+                    <li>></li>
+                    <li>Ofertas</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="promociones-div"></div>        
+    </div>
+</section>
+<script>        
+
+
+    var promociones = JSON.parse(request.responseText);
+    html = '<div class="box-promos">';
+    html += '<h2 class="blue">' + producto[0].Titulo + '</h2>';
+    if(producto[0].Subtitulo !== null) {
+        html += '<p class="skyBlue">' + producto[0].Subtitulo + '</p>';
+    }
+    html += '</div>';
+    html += '<div class="block-info">';
+    html += '<div class="col-left">';
+    html += '<img src="images/promociones/' + producto[0].ImagenProducto + '"  />';
+    html += '</div>';
+    html += '<div class="col-right">';
+    html += '<ul>';
+    for(var j=0; j< producto[0].Beneficios.length; j++){
+        if(producto[0].Beneficios[j] !== null) {
+            html += '<li>' + producto[0].Beneficios[j] + '</li>';
+        }
+    }
+    html += '<li class="none"><a href="'+ producto[0].LinkRequisitos +'" target="_blank">Requisitos</a></li>';
+    html += '</ul>';
+    html += '</div>';
+    html += '</div>';
+    $('.promociones-div').append(html);
+
+    $('.modal .col-right li a').click(function(event){           
+            event.preventDefault();
+            var linkIframe = $(this).attr('href');
+            window.open(linkIframe, 'newwindow', 'width=1050', 'height=760', 'left=100', 'top=100', 'position=absolute');
+      });
+
+ </script>   
+

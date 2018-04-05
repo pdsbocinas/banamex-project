@@ -1,0 +1,94 @@
+<script>
+
+    var sliderPromocion = $('.promociones .bxslider').bxSlider({
+        slideWidth: 1500,
+        maxSlides: 1,
+        pager: false,
+        infiniteLoop:false,
+        touchEnabled:true,
+        randomStart: false,
+        speed: 1000
+    });
+    
+//    var promociones = JSON.parse('[{"Titulo":"Devlyn","Subtitulo":"Disfruta y compra los lentes que siempre hab\u00edas querido.","Imagen":"Devlyn.jpg","Beneficios":["18 meses sin intereses.","Paga con tus Tarjetas de Cr\u00e9dito Banamex.","Vigencia: del 01\/Ene\/2015 al 31\/Dic\/2015."],"Link":"https:\/\/bnmxpromociones.com\/promocion\/18-meses-en-los-lentes-que-siempre-quisiste-s%C3%B3lo-en-devlyn"},{"Titulo":"SAMS","Subtitulo":"Aprovecha las incre\u00edbles ofertas que SAM\'S CLUB tiene para ti.","Imagen":"Sams.jpg","Beneficios":["\u00a1Meses Sin Intereses en SAM\'S CLUB!","Vigencia: del 18\/Jul\/2012 al 31\/Dic\/2015."],"Link":"https:\/\/bnmxpromociones.com\/promocion\/%C2%A1meses-sin-intereses-en-sams-club"},{"Titulo":"Bellinghausen","Subtitulo":"Desde 1915 es uno de los mejores restaurantes de la ciudad.","Imagen":"Bellinghausen.jpg","Beneficios":["15% de descuento pagando con tu Tarjeta Banamex Premium.","Vigencia: del 01\/Jun\/2014 al 31\/Dic\/2015.","En mesa a partir de 4 personas."],"Link":"https:\/\/bnmxpromociones.com\/promocion\/en-bellinghausen-obt%C3%A9n-un-15-de-descuento-1"},{"Titulo":"Saks Fifth Avenue","Subtitulo":"Exquisita selecci\u00f3n de colecciones de moda","Imagen":"Saks.jpg","Beneficios":["10% de descuento en Saks Fifth Avenue.","Vigencia : del 09\/Jul\/2014 al 31\/Dic\/2015."],"Link":"https:\/\/bnmxpromociones.com\/promocion\/10-de-descuento-en-saks-fifth-avenue"},{"Titulo":"Mart\u00ed","Subtitulo":"Saca el deporteista que hay en ti","Imagen":"Marti.jpg","Beneficios":["12 meses sin intereses.","Vigencia: del 01\/Ene\/2015 al 31\/Dic\/2015."],"Link":"https:\/\/bnmxpromociones.com\/promocion\/12-meses-sin-intereses-en-marti"}]');
+    var request = new XMLHttpRequest();
+    request.open('GET', 'data/promociones.json', false);
+    request.send(null);
+    var promociones = JSON.parse(request.responseText);
+    for(var i=0;i<promociones.length;i++){
+        html = '<li>';
+        html += '<div class="box-promos">';
+        html += '<h2 class="blue">' + promociones[i].Titulo + '</h2>';
+        if(promociones[i].Subtitulo !== null) {
+            html += '<p class="skyBlue">' + promociones[i].Subtitulo + '</p>';
+        }
+        html += '</div>';
+        html += '<div class="block-info">';
+        html += '<div class="col-left">';
+        html += '<img src="images/promociones/' + promociones[i].Imagen + '" width="500" />';
+        html += '</div>';
+        html += '<div class="col-right">';
+        html += '<ul>';
+        
+        for(var j=0; j< promociones[i].Beneficios.length; j++){
+            if(promociones[i].Beneficios[j] !== null) {
+                html += '<li>' + promociones[i].Beneficios[j] + '</li>';
+            }
+        }
+        html += '<li class="none"><a href="' + promociones[i].Link + '">Requisitos</a></li>';
+        /*html += '<input type="button" class="hide-modal"/>';
+        html += '<div class="div-iframe">';
+        html += '<iframe name="iframePopup" src="' + promociones[i].Link + '" width="1000" height="800" scrolling="no"></iframe>';
+        html += '</div>';*/
+        html += '</ul>';
+        html += '</div>';
+        html += '</div>';
+        html += '</li>';
+        $(".bxslider").append(html);
+
+    }
+    
+    sliderPromocion.reloadSlider();    
+    
+</script>	
+<section class="min-width promociones modal">
+    <div class="content">
+        <ul class="block-header">
+            <li class="breadcumb">
+                <ul>
+                    <li>Promociones</li>
+                    <li>></li>
+                    <li>Ofertas</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="bxslider">
+<!--            <li>
+                <div class="box-promos">
+                    <h2 class="blue">Devlyn</h2>
+                    <p class="skyBlue">Disfruta y compra los lentes que siempre habías querido</p>
+                </div>
+                <div class="block-info">
+                    <div class="col-left">
+                        <img src="images/promociones/devlyn.png" width="504" height="530">
+                    </div>
+                    <div class="col-right">
+                        <ul>
+                            <li>18 meses sin intereses.</li>
+                            <li>Paga con tus Tarjetas de Crédito Banamex.</li>
+                            <li>Vigencia: del 01/Ene/2015 al 31/Dic/2015.</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>-->
+
+        </ul>
+    </div>
+</section>
+<script>
+    $(".promociones .col-right li a").click(function(event){
+        event.preventDefault();
+        var link = $(this).attr("href");
+        window.open(link, 'newwindow', 'width=1000, height=700','left=100','top=100', 'position=absolute');return false;
+    })
+</script>
